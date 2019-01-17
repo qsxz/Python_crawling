@@ -2,7 +2,7 @@
 """
 Created on Sat Dec  2 23:43:01 2017
 
-@author: lenovo
+@author: lenovo123
 """
 
 #!/usr/bin/env python2.7
@@ -34,7 +34,7 @@ headers={'Host':'music.163.com',
          'Accept-Language':'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
          'Accept-Encoding':'gzip, deflate',
          'Content-Type':'application/x-www-form-urlencoded',
-         'Referer':'http://music.163.com/song?id=347597',
+         'Referer':'http://music.163.com/song?id=168089',
          'Content-Length':'484',
          'Cookie':'__s_=1; _ntes_nnid=f17890f7160fd145486752ebbf2066df,1505221478108; _ntes_nuid=f17890f7160fd145486752ebbf2066df; JSESSIONID-WYYY=Z99pE%2BatJVOAGco1d%2FJpojOK94Xe9GHqe0epcCOj23nqP2SlHt1XwzWQ2FXTwaM2xgIN628qJGj8%2BikzfYkv%2FXAUo%2FSzwMxjdyO9oeQlGKBvH6nYoFpJpVlA%2F8eP57fkZAVEsuB9wqkVgdQc2cjIStE1vyfE6SxKAlA8r0sAgOnEun%2BV%3A1512200032388; _iuqxldmzr_=32; __utma=94650624.1642739310.1512184312.1512184312.1512184312.1; __utmc=94650624; __utmz=94650624.1512184312.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); playerid=10841206',	
          'Connection':'keep-alive',
@@ -152,7 +152,7 @@ def save_to_file(list,filename):
 if __name__ == "__main__":
     start_time = time.time() # 开始时间
     url = "http://music.163.com/weapi/v1/resource/comments/R_SO_4_347597?csrf_token=" #替换为你想下载的歌曲R_SO的链接
-    filename = "不再犹豫.txt" #修改歌曲名称
+    filename = "江国正寂寂.txt" #修改歌曲名称
     all_comments_list = get_all_comments(url)
     save_to_file(all_comments_list,filename)
     end_time = time.time() #结束时间
